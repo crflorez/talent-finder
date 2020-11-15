@@ -1,0 +1,8 @@
+{
+  "name": "talent-finder",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "9626d9c3"
+}
