@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
+
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,15 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  datauser: any;
+  
+  constructor(   
+    public api: ApiService
+  ) {}
+
+    ngOnInit(){
+      
+    }
+
 
 }

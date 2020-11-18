@@ -11,14 +11,24 @@
     <ion-toolbar>
       <ion-title size="large">Login</ion-title>
     </ion-toolbar>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </ion-header>
 
 
+  <div class="w3-center">
   <ion-input placeholder="Email" inputmode="email" ></ion-input>
   <ion-input placeholder="Contraseña" ></ion-input>
 
   <ion-button color="light">Login</ion-button>
-  <ion-button color="light">Registrarme</ion-button>
+  <br>
+  <ion-button color="light" [routerLink]="['/registro']">Registrarme</ion-button>
+  <br>
+
+</div>
+</ion-content>
+
+<ion-content>
+  
 
 </ion-content>
 

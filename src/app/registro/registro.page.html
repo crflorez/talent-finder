@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</ion-header>
+
+<ion-content class="w3-center">
+
+  <ion-input placeholder="Email" inputmode="email" ></ion-input>
+  <ion-input placeholder="Contraseña" ></ion-input>
+  <ion-input placeholder="Verificar Contraseña" ></ion-input>
+  <ion-input type="number" placeholder="Num Telefono" ></ion-input>
+  <ion-input type="number" placeholder="Edad" ></ion-input>
+
+
+  <ion-radio-group value="TalentoTalentoso">
+    <ion-list-header>
+      <ion-label>Buscas Talento o Eres Talentoso</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Busco Talento</ion-label>
+      <ion-radio slot="start" value="0"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Soy Talentoso</ion-label>
+      <ion-radio slot="start" value="1"></ion-radio>
+    </ion-item>
+
+  </ion-radio-group>
+
+  
+  <ion-radio-group value="Sexo">
+    <ion-list-header>
+      <ion-label>Sexo</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Femenino</ion-label>
+      <ion-radio slot="start" value="F"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Masculino</ion-label>
+      <ion-radio slot="start" value="M"></ion-radio>
+    </ion-item>
+
+  </ion-radio-group>
+
+
+  <br>
+  <br>
+  <ion-button (click)="registrarUsuario()">Registrarme</ion-button>
+  <br>
+  <ion-button [routerLink]="['/login']">Atras</ion-button>
+  
+
+</ion-content>

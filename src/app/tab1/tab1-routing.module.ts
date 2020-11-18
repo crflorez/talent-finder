@@ -6,7 +6,8 @@ const routes: Routes = [
   {
     path: '',
     component: Tab1Page,
-  }
+  },
+  {path: 'registro', loadChildren: '../registro/registro.module'}
 ];
 
 @NgModule({
