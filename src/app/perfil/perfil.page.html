@@ -1,0 +1,38 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="light" [routerLink]="['/tabs']"> Volver</ion-button>
+    </ion-buttons>
+    <ion-button slot="end" color="secondary" [routerLink]="['/notificaciones']" >
+      <ion-icon name="notifications-outline"></ion-icon>
+    </ion-button>
+    <ion-title>&nbsp;</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" slot="fixed" >
+    <div class="card">
+      <div class="header">
+        <div class="avatar">
+          <img src="https://3uyk1u8t31u2s7pqj3y10ttm-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/Underwater-Nun.jpg" alt="">
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="user-meta ion-text-center">
+          <h3 class="playername">Roger Federer</h3>
+          <h5 class="country">Suiza</h5>
+          <h5 class="ranking">Vistas<ion-chip>
+              <ion-label >4 mil</ion-label>
+            </ion-chip>
+          </h5>
+        </div>
+
+        <ion-button expand="full" color="primary">http://rogerfederer.com/</ion-button>
+        <ion-button expand="full" color="secondary">@RogerFederer on Twitter</ion-button>
+        <ion-button expand="full" color="secondary">+57 300 300 0101</ion-button>
+
+      </div>
+    </div>
+
+</ion-content>

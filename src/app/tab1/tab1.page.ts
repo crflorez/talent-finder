@@ -20,4 +20,14 @@ export class Tab1Page {
     }
 
 
+    loginUsuario(){
+      var correo = `laupi@gmail.com`;
+      var contra : `lauris`;
+      alert("Alerta de funcion registro usuario");
+      this.api.loginUsuario(correo, contra).subscribe((nuevoUsuario)=>{
+        console.log(nuevoUsuario);
+      });
+    }
+
+
 }

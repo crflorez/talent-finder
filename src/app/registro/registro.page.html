@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </ion-header>
 
-<ion-content class="w3-center">
+<ion-content class="w3-left-align">
 
   <ion-input placeholder="Email" inputmode="email" ></ion-input>
   <ion-input placeholder="Contraseña" ></ion-input>
@@ -13,7 +13,8 @@
   <ion-input type="number" placeholder="Num Telefono" ></ion-input>
   <ion-input type="number" placeholder="Edad" ></ion-input>
 
-
+  <br>
+  <br>
   <ion-radio-group value="TalentoTalentoso">
     <ion-list-header>
       <ion-label>Buscas Talento o Eres Talentoso</ion-label>
@@ -48,13 +49,13 @@
     </ion-item>
 
   </ion-radio-group>
+</ion-content>
 
-
   <br>
   <br>
-  <ion-button (click)="registrarUsuario()">Registrarme</ion-button>
+  <ion-button class="w3-center" (click)="registrarUsuario()">Registrarme</ion-button>
   <br>
-  <ion-button [routerLink]="['/tabs']">Atras</ion-button>
+  <ion-button class="w3-center" [routerLink]="['/tabs']">Atras</ion-button>
   
 
-</ion-content>
+

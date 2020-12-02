@@ -19,7 +19,8 @@
   <ion-input placeholder="Email" inputmode="email" ></ion-input>
   <ion-input placeholder="Contraseña" ></ion-input>
 
-  <ion-button color="light">Login</ion-button>
+  <ion-button color="tertiary" (click)="loginUsuario()" >Login login</ion-button>
+  <ion-button color="light" [routerLink]="['/notificaciones']">Login</ion-button>
   <br>
   <ion-button color="light" [routerLink]="['/registro']">Registrarme</ion-button>
   <br>

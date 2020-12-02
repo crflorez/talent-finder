@@ -7,10 +7,11 @@ import { Usuario } from './interfaces/usuario';
 
 
 const httpOptions = {
-  headers: new HttpHeaders({'Content-Type': 'application/json'})
+  headers: new HttpHeaders({'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'})
 };
 
-const apiUrl = "api/usuario/";
+const apiUrl = "http://talentosapirest.somee.com/api/usuario/";
+
 
 
 @Injectable({
@@ -41,10 +42,19 @@ export class ApiService {
       return this.http.post(path, usuario)
     }
 
+    loginUsuario(correo: string, contra:string){
+
+
+      const path = `${apiUrl}inicarSesion`;
+      
+      return this.http.post(path, {correo, contra}, httpOptions)
+      
+    }
 
     getTalentos(){
-      const path ='link';
-      return this.http.get<string[]>(path);
+      const path =`${apiUrl}mostrarTodosLosTalentos`;
+      //return this.http.get<string[]>(path);
+      return this.http.post(path, {}, httpOptions);
     }
 
 }
